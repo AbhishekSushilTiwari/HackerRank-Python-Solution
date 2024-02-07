@@ -1,0 +1,29 @@
+if __name__ == '__main__':
+    
+    results = []
+    nes_loop = []
+    
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        nes_loop.append([name, score])
+        
+    nes_loop.sort(key=lambda x: x[1])
+    
+    a = nes_loop[1][1]  
+    
+    for i in range(len(nes_loop)):
+        if nes_loop[i][1] == a:
+            results.append(nes_loop[i][0])
+            
+    results.sort() 
+    
+    for name in results:
+        print(name)
+        
+        
+    
+    
+    
+       
+        
