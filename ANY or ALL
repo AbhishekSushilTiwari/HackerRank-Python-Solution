@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+N = int(input())
+
+pal_num = list(map(int, input().split()))
+
+print(all(num > 0 for num in pal_num) and any(num > 0 and str(num) == str(num)[::-1] for num in pal_num))
+
+
+    
+
+    
